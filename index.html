@@ -161,9 +161,9 @@
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="#Curriculum">
+                    <a class="btn btn-xl btn-outline-light" href="#Contact">
                         <i class="fas fa-download me-2"></i>
-                        Syllabus Download
+                        Request Syllabus
                     </a>
                 </div>
             </div>
@@ -172,7 +172,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" id = "Contact">Stay in Touch</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" id = "Contact">Subscribe</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -181,59 +181,34 @@
                 </div>
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="col-lg-8 col-xl-7 form-group">
+                        <form id="contactForm" action="https://formspree.io/f/xoqrjqbw" method="POST">
                             <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            <div class="form-row">
+                                <label for="name">
+                                    Full name:
+                                    <input class="form-control mt-2" id="name" name="name" type="text" placeholder="Enter your name..." />
+                                </label>
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            <br>
+                            <!-- Email input-->
+                            <div class="form-row">
+                                <label for="email">
+                                    Email:
+                                    <input class="form-control mt-2" id="email" name="_replyto" type="email" placeholder="Enter your email..." />
+                                </label>
                             </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
+                            <br>
                             <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            <div class="form-row">
+                                <label for="message">
+                                    Message:
+                                    <textarea class="form-control mt-2" id="message" name="message" type="text" placeholder="Enter your message..."></textarea>
+                                </label>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <a href="#Contact"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Subscribe</button></a>
+                            <br>
+                            <!-- your other form fields go here -->
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
                         </form>
                     </div>
                 </div>
@@ -254,11 +229,11 @@
                     </div> -->
                     <!-- Footer Social Icons-->
                     <div class="col-lg-12 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4" id = "Socials">Find us on the Interwebs</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#Socials"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#Socials"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#Socials"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#Socials"><i class="fab fa-fw fa-github"></i></a>
+                        <h4 class="text-uppercase mb-4" id = "Socials">Feel Free to Connect!</h4>
+                        <!-- <a class="btn btn-outline-light btn-social mx-1" href="#Socials"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#Socials"><i class="fab fa-fw fa-twitter"></i></a> -->
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://linkedin.com/in/nicholasmccarty"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https:/github.com/nickmccarty"><i class="fab fa-fw fa-github"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <!-- <div class="col-lg-4">
@@ -295,12 +270,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/time-series-icon.png" alt="..." />
+                                    <a href="https://nickmccarty.github.io/time-series-landing-page/"><img class="img-fluid rounded mb-5" src="assets/img/portfolio/time-series-icon.png" alt="..." /></a>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Learn how to perform time series analysis and forecasting using Python!</p>
                                     <a href="https://nickmccarty.github.io/time-series-landing-page/"><button class="btn btn-primary" >
-                                        <i class="fas fa-solid fa-notebook"></i>
-                                        Preview Course
+                                        <i class="fas fa-brain"></i>
+                                        Preview Course Modules
                                     </button></a>
                                 </div>
                             </div>
@@ -330,9 +305,10 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/mean-reversion-tile.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Learn how to construct mean-reversion based trading strategies using Python!</p>
-                                    <a href=""><button class="btn btn-primary">
-                                        <i class="fas fa-solid fa-notebook"></i>
-                                        Preview Course
+                                    <p class="mb-4"><i class="fas fa-drafting-compass"></i> This course is currently under construction <i class="fas fa-tools"></i></p>
+                                    <a href="#Contact"><button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-brain"></i>
+                                        Request to Receive Updates
                                     </button></a>
                                 </div>
                             </div>
@@ -361,10 +337,11 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/momentum-tile.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Learn how to construct mean-reversion based trading strategies using Python!</p>
-                                    <a href="https://github.com/nickmccarty/time-series-analysis/blob/main/Notebooks/stationarity.ipynb"><button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-solid fa-notebook"></i>
-                                        Preview Course
+                                    <p class="mb-4">Learn how to construct momentum-based trading strategies using Python!</p>
+                                    <p class="mb-4"><i class="fas fa-drafting-compass"></i> This course is currently under construction <i class="fas fa-tools"></i></p>
+                                    <a href="#Contact"><button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-brain"></i>
+                                        Request to Receive Updates
                                     </button></a>
                                 </div>
                             </div>
@@ -394,10 +371,11 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/algo-trading-tile.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Learn how to build algorithmic trading systems with Python!</p>
-                                    <button class="btn btn-primary">
-                                        <i class="fas fa-solid fa-notebook"></i>
-                                        Preview Course
-                                    </button>
+                                    <p class="mb-4"><i class="fas fa-drafting-compass"></i> This course is currently under construction <i class="fas fa-tools"></i></p>
+                                    <a href="#Contact"><button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-brain"></i>
+                                        Request to Receive Updates
+                                    </button></a>
                                 </div>
                             </div>
                         </div>
